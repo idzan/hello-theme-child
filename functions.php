@@ -10,7 +10,7 @@
  *
  * @return void
  */
-function hello_elementor_child_enqueue_scripts() {
+function idzan_marko_elementor_enqueue_scripts() {
 	wp_enqueue_style(
 		'hello-elementor-child-style',
 		get_stylesheet_directory_uri() . '/style.css',
@@ -20,4 +20,4 @@ function hello_elementor_child_enqueue_scripts() {
 		'1.0.0'
 	);
 }
-add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 20 );
+add_action( 'wp_enqueue_scripts', 'idzan_marko_elementor_enqueue_scripts', 20 );
